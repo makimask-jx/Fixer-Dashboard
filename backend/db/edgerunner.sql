@@ -1269,7 +1269,7 @@ VALUES (
 -- Insertions for MERCENARIO_CATEGORIA (20 records)
 -- Note: Original schema had 3, expanded to 20 for consistency
 INSERT INTO `MERCENARIO_CATEGORIA` (id_categoria, categoria)
-VALUES (1, ' Netrunner '),
+VALUES (1, 'Netrunner'),
     (2, 'Solo'),
     (3, 'Techie'),
     (4, 'Nomad'),
@@ -1325,7 +1325,7 @@ VALUES (
         2,
         2,
         82,
-        ' http: // secure - net.local / images / ironclad.png ',
+        'http: // secure - net.local / images / ironclad.png',
         3,
         3,
         5550200,
@@ -1374,11 +1374,11 @@ VALUES (
     (
         6,
         'Lucy',
-        ' Netrunner escaping Arasaka control.',
+        'Netrunner escaping Arasaka control.',
         1,
         4,
         92,
-        ' http: // secure - net.local / images / lucy.png ',
+        'http: // secure - net.local / images / lucy.png',
         17,
         9,
         5550204,
@@ -1386,12 +1386,12 @@ VALUES (
     ),
     (
         7,
-        ' Maine ',
-        ' Cyberpsycho mercenary crew leader.',
+        'Maine',
+        'Cyberpsycho mercenary crew leader.',
         2,
         8,
         88,
-        ' http: // secure - net.local / images / maine.png ',
+        'http: // secure - net.local / images / maine.png ',
         13,
         13,
         5550205,
@@ -1399,13 +1399,13 @@ VALUES (
     ),
     (
         8,
-        ' Rebecca ',
-        ' Small but fierce medic
+        'Rebecca',
+        'Small but fierce medic
         and gunner.',
         6,
         8,
         85,
-        ' http: // secure - net.local / images / rebecca.png ',
+        'http: // secure - net.local / images / rebecca.png',
         19,
         17,
         5550206,
@@ -1413,13 +1413,13 @@ VALUES (
     ),
     (
         9,
-        ' Falco ',
-        ' Mechanic
+        'Falco',
+        'Mechanic
         and David Martinez crew member.',
         3,
         7,
         80,
-        ' http: // secure - net.local / images / falco.png ',
+        'http: // secure - net.local / images / falco.png',
         20,
         19,
         5550207,
@@ -1427,13 +1427,13 @@ VALUES (
     ),
     (
         10,
-        ' Kiwi ',
-        ' Netrunner
+        'Kiwi',
+        'Netrunner
         and Maine crew member.',
         1,
         8,
         75,
-        ' http: // secure - net.local / images / kiwi.png ',
+        'http: // secure - net.local / images / kiwi.png',
         11,
         11,
         5550208,
@@ -1441,12 +1441,12 @@ VALUES (
     ),
     (
         11,
-        ' Jackie Welles ',
-        ' Mercenary with dreams of becoming legend.',
+        'Jackie Welles',
+        'Mercenary with dreams of becoming legend.',
         2,
         10,
         70,
-        ' http: // secure - net.local / images / jackie.png ',
+        'http: // secure - net.local / images / jackie.png',
         13,
         13,
         5550209,
@@ -1474,7 +1474,7 @@ VALUES (
         20,
         16,
         100,
-        ' http: // secure - net.local / images / rogue.png ',
+        'http: // secure - net.local / images / rogue.png',
         15,
         15,
         5550211,
@@ -1482,7 +1482,7 @@ VALUES (
     ),
     (
         14,
-        'Johnny Silverhand',
+        'Johnny Silverhand ',
         'Rockerboy legend
         and terrorist.',
         5,
@@ -1501,7 +1501,7 @@ VALUES (
         8,
         6,
         85,
-        ' http: // secure - net.local / images / takemura.png ',
+        'http: // secure - net.local / images / takemura.png',
         11,
         11,
         5550213,
@@ -1509,7 +1509,7 @@ VALUES (
     ),
     (
         16,
-        'River Ward',
+        'River Ward ',
         'NCPD detective
         and mercenary.',
         17,
@@ -1523,7 +1523,7 @@ VALUES (
     ),
     (
         17,
-        'Kerry Eurodyne ',
+        'Kerry Eurodyne',
         'Rockerboy legend
         and fixer.',
         5,
@@ -1537,8 +1537,8 @@ VALUES (
     ),
     (
         18,
-        'Judy Alvarez ',
-        'braindance technician.',
+        'Judy Alvarez',
+        'Braindance technician.',
         1,
         10,
         88,
@@ -1550,7 +1550,7 @@ VALUES (
     ),
     (
         19,
-        'Misty Olszewski ',
+        'Misty Olszewski',
         'Spiritual advisor
         and occasional mercenary.',
         19,
@@ -1626,159 +1626,159 @@ INSERT INTO `CYBERWARE` (id, nombre, modelo, id_fabricante, precio, grado)
 VALUES (
         1,
         'Neural Cortex Processor',
-        'Mk IV',
+        ' Mk IV ',
         1,
         15000.00,
         4
     ),
     (
         2,
-        'Sub-dermal Armour Plating',
-        'Aegis Shield-V',
+        ' Sub - dermal Armour Plating ',
+        ' Aegis Shield - V ',
         2,
         22000.00,
         5
     ),
     (
         3,
-        'Optical Scanner',
-        'Kiroshi Basic',
+        ' Optical Scanner ',
+        ' Kiroshi Basic ',
         3,
         3500.00,
         2
     ),
     (
         4,
-        'Sandevistan Mark 5',
-        'Zetatech',
+        ' Sandevistan Mark 5 ',
+        ' Zetatech ',
         5,
         45000.00,
         5
     ),
     (
         5,
-        'Mantis Blades',
-        'Militech Combat',
+        ' Mantis Blades ',
+        ' Militech Combat ',
         2,
         18000.00,
         4
     ),
     (
         6,
-        'Gorilla Arms',
-        'Standard',
+        ' Gorilla Arms ',
+        ' Standard ',
         2,
         12000.00,
         3
     ),
     (
         7,
-        'Cyberdeck Mark IV',
-        'Alt Cunningham',
+        ' Cyberdeck Mark IV ',
+        ' Alt Cunningham ',
         18,
         55000.00,
         5
     ),
     (
         8,
-        'Quickhack Accelerator',
-        'Zetatech',
+        ' Quickhack Accelerator ',
+        ' Zetatech ',
         5,
         28000.00,
         4
     ),
     (
         9,
-        'Reinforced Tendons',
-        'Arasaka',
+        ' Reinforced Tendons ',
+        ' Arasaka ',
         1,
         8000.00,
         3
     ),
     (
         10,
-        'Blood Pump System',
-        'Trauma Team',
+        ' Blood Pump System ',
+        ' Trauma Team ',
         4,
         15000.00,
         3
     ),
     (
         11,
-        'Berserk Operating System',
-        'Maelstrom',
+        ' Berserk Operating System ',
+        ' Maelstrom ',
         8,
         60000.00,
         5
     ),
     (
         12,
-        'Synaptic Accelerator',
-        'Synapse',
+        ' Synaptic Accelerator ',
+        ' Synapse ',
         13,
         32000.00,
         4
     ),
     (
         13,
-        'Chrome Arm Replacement',
-        'Arasaka',
+        ' Chrome Arm Replacement ',
+        ' Arasaka ',
         1,
         25000.00,
         5
     ),
     (
         14,
-        'Engram Storage Device',
-        'Alt Cunningham',
+        ' Engram Storage Device ',
+        ' Alt Cunningham ',
         18,
         75000.00,
         5
     ),
     (
         15,
-        'Memory Buffer Upgrade',
-        'Zetatech',
+        ' Memory Buffer Upgrade ',
+        ' Zetatech ',
         5,
         18000.00,
         3
     ),
     (
         16,
-        'Emotional Dampener',
-        'Synapse',
+        ' Emotional Dampener ',
+        ' Synapse ',
         13,
         12000.00,
         2
     ),
     (
         17,
-        'Projectile Launch System',
-        'Militech',
+        ' Projectile Launch System ',
+        ' Militech ',
         2,
         35000.00,
         4
     ),
     (
         18,
-        'Thermal Katana Integration',
-        'Arasaka',
+        ' Thermal Katana Integration ',
+        ' Arasaka ',
         1,
         42000.00,
         4
     ),
     (
         19,
-        'Optical Camouflage System',
-        'Katsuo',
+        ' Optical Camouflage System ',
+        ' Katsuo ',
         12,
         50000.00,
         5
     ),
     (
         20,
-        'Neural Link Basic',
-        'Zetatech',
+        ' Neural Link Basic ',
+        ' Zetatech ',
         5,
         9000.00,
         2
@@ -1844,7 +1844,7 @@ VALUES (
         4,
         3,
         4,
-        'Arasaka Tower Infiltration ',
+        'Arasaka Tower Infiltration',
         'Infiltrate the Arasaka tower to extract a high - value target.',
         'Exitoso'
     ),
@@ -1870,7 +1870,7 @@ VALUES (
         7,
         6,
         7,
-        'Corporate Sabotage',
+        'Corporate Sabotage ',
         'Sabotage a Biotechnica research lab.',
         'Fracaso'
     ),
@@ -1896,7 +1896,7 @@ VALUES (
         10,
         'Pacifica Cleanup',
         'Clear out a gang stronghold in Pacifica.',
-        'Pendiente'
+        'Pendiente '
     ),
     (
         11,
@@ -1959,7 +1959,7 @@ VALUES (
         18,
         17,
         18,
-        'Anti - Corp Raid',
+        'Anti-Corp Raid ',
         'Raid a corporate facility.',
         'Fracaso'
     ),
