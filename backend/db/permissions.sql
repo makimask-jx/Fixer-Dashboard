@@ -1,0 +1,3 @@
+CREATE USER edgerunner IDENTIFIED BY '1111';
+GRANT ALL PRIVILEGES ON edgerunner.* TO 'edgerunner' @'%';
+FLUSH PRIVILEGES;
