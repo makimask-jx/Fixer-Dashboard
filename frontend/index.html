@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,43 +8,48 @@
     <script defer src="./node_modules/alpinejs/dist/cdn.min.js"></script>
 </head>
 
-<body style="font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px;">
+<body style="font-family: sans-serif; width: 90%; max-width: 40rem; margin: 2.5rem auto; padding: 0 1.25rem;">
 
     <div x-data="crudApp()" x-init="readItems()">
-        <h1>Pide info a la DB</h1>
+        <h1>Request Database Info</h1>
 
-        <section style="margin-bottom: 2rem;">
-            <input type="text" x-model="newItemName" placeholder="Nombre del objeto a crear" style="padding: 8px;">
-            <button @click="createItem()" style="padding: 8px 16px;">Añadir</button>
+        <section style="margin-bottom: 2rem; display: flex; gap: 0.5rem;">
+            <input type="text" x-model="newItemName" placeholder="Object name"
+                style="padding: 0.5rem; flex-grow: 1; min-width: 0;">
+            <button @click="createItem()" style="padding: 0.5rem 1rem;">Add</button>
         </section>
 
-        <table style="width: 100%; border-collapse: collapse;">
-            <thead>
-                <tr style="text-align: left; border-bottom: 2px solid #ccc;">
-                    <th style="padding: 10px;">ID</th>
-                    <th style="padding: 10px;">Nombre</th>
-                    <th style="padding: 10px;">Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <template x-for="item in items" :key="item.id">
-                    <tr style="border-bottom: 1px solid #eee;">
-                        <td style="padding: 10px;" x-text="item.id"></td>
-                        <td style="padding: 10px;">
-                            <span x-show="!item.isEditing" x-text="item.name"></span>
-                            <input x-show="item.isEditing" type="text" x-model="item.tempName" style="padding: 4px;">
-                        </td>
-                        <td style="padding: 10px;">
-                            <button x-show="!item.isEditing" @click="startEdit(item)">Editar</button>
-                            <button x-show="item.isEditing" @click="updateItem(item)">Guardar</button>
-                            <button x-show="item.isEditing" @click="item.isEditing = false">Cancelar</button>
-
-                            <button @click="deleteItem(item.id)" style="color: red;">Eliminar</button>
-                        </td>
+        <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="text-align: left; border-bottom: 0.125rem solid #ccc;">
+                        <th style="padding: 0.625rem;">ID</th>
+                        <th style="padding: 0.625rem;">Name</th>
+                        <th style="padding: 0.625rem;">Actions</th>
                     </tr>
-                </template>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <template x-for="item in items" :key="item.id">
+                        <tr style="border-bottom: 0.0625rem solid #eee;">
+                            <td style="padding: 0.625rem;" x-text="item.id"></td>
+                            <td style="padding: 0.625rem;">
+                                <span x-show="!item.isEditing" x-text="item.name"></span>
+                                <input x-show="item.isEditing" type="text" x-model="item.tempName"
+                                    style="padding: 0.25rem; width: 100%; box-sizing: border-box;">
+                            </td>
+                            <td style="padding: 0.625rem;">
+                                <div style="display: flex; gap: 0.25rem; flex-wrap: wrap;">
+                                    <button x-show="!item.isEditing" @click="startEdit(item)">Edit</button>
+                                    <button x-show="item.isEditing" @click="updateItem(item)">Save</button>
+                                    <button x-show="item.isEditing" @click="item.isEditing = false">Cancel</button>
+                                    <button @click="deleteItem(item.id)" style="color: red;">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 
